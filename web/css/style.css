@@ -17,7 +17,7 @@
 
 
 /* 컨텐츠 레이아웃 */
-#cont_nav{ border-color: #f6fdff;}
+#cont_nav{ border-color: #f6fdff; display: none;}
 #cont_tit{background-color:#eaf7fd ;}
 #cont_ban{background-color: #dceff7;}
 #cont_cont{ background: #f6fdff}
@@ -72,7 +72,7 @@ float : left 로 인한 영역깨짐(height:0) 방지법
 .tit h2{font-size: 40px;text-align: center; padding: 5px 0; letter-spacing: 2px; color: #2c94c4; font-family: 'Single Day', cursive;}
 .tit .btn{position: absolute; top: 5px; right: 0; width: 60px; height: 60px;background: url(../img/icon.png) no-repeat 0 -600px;}
 .tit .btn:hover{background-position:  -60px -600px;}
-
+.tit .btn.on{background-position: 0 -660px;}
 
 
 /* 배너 */
