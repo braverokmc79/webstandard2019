@@ -76,21 +76,43 @@ float : left 로 인한 영역깨짐(height:0) 방지법
 
 
 /* 배너 */
+/*
 .ban{position: relative; padding: 24px 0 20px;}
-.ban a.prev {position: absolute; left: -60px; top: 60px; width: 43px; height: 43px; background: #ccc; background: url(../img/icon.png) no-repeat -150px 0;}
+ .ban a.prev {position: absolute; left: -60px; top: 60px; width: 43px; height: 43px; background: #ccc; background: url(../img/icon.png) no-repeat -150px 0;}
 .ban a.next {position: absolute; right: -60px;top: 60px; width: 43px; height: 43px; background: #ccc; background: url(../img/icon.png) no-repeat -150px -43px;}
 .ban a.prev:hover{ background-position:  -193px 0;}
 .ban a.next:hover{ background-position:  -193px -43px;}
 
 .ban ul{overflow: hidden;}
 .ban ul li{float: left; width: 330px;}
-.ban ul li:last-child{text-align: right;} /* ie9 부터 적용 */
-.ban ul li:nth-child(2){text-align: center;} /* ie9 부터 적용 */
+.ban ul li:last-child{text-align: right;} /* ie9 부터 적용 */  /* ie9 부터 적용 */
+/* .ban ul li:nth-child(2){text-align: center;}
 .ban ul li.ban_img1{text-align: left;}
 .ban ul li.ban_img2{text-align: center;}
 .ban ul li.ban_img3{text-align: right;}
 .ban ul li img{border: 4px solid #dcdcdc;}
-.ban ul li img:hover{border-color: #98bcdc ;}
+.ban ul li img:hover{border-color: #98bcdc ;} */ */
+
+
+/* 슬릭 배너 */
+.slick-slider{padding:0;}
+.ban{position: relative; padding: 24px 0 40px  !important; }
+
+.ban .slick-arrow{position: absolute; text-indent: -9999px;top: 80px; width: 43px; height: 43px; background: #ccc;cursor: pointer;}
+.ban .slick-prev{left: -80px; background: url(https://cdn.jsdelivr.net/gh/braverokmc79/webstandard2019@v1.0.0/web/img/icon.png) no-repeat -150px 0;}
+.ban .slick-next{right: -80px;background: url(https://cdn.jsdelivr.net/gh/braverokmc79/webstandard2019@v1.0.0/web/img/icon.png) no-repeat -150px -43px;}
+.ban .slick-prev:hover{ background-position:  -193px 0;}
+.ban .slick-next:hover{background-position:  -193px -43px;}
+.ban img{border: 4px solid #dcdcdc; }
+.ban img:hover{border-color: #98bcdc; }
+
+.ban .slick-slide{margin: 10px;}
+.ban .slick-dots{position: absolute; bottom:15px; display: block; width: 100%; text-align: center;}
+.ban .slick-dots li{display: inline-block; width: 15px; height: 15px; margin: 5px;}
+.ban .slick-dots li button{font-size: 0; line-height: 0; display: block; width: 15px; height: 15px; cursor: pointer;background: #5dbfeb;border-radius: 50%; }
+.ban .slick-dots li.slick-active button{background: #2b91c8;}
+/* slick-prev slick-arrow */
+
 
 
 
