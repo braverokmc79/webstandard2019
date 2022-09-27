@@ -306,8 +306,8 @@
                                     <h4>Advertisement</h4>
                                     <ul>
                                         <li class="layerPopup"><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
-                                        <li class="layerPopup"><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
-                                        <li class="layerPopup last"><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
+                                        <li class="windowPopup"><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
+                                        <li class="last"><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
                                     </ul>
                                 </div>
                                 <!-- //팝업 -->
@@ -549,6 +549,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script>
+        //윈도우 팝업
+        $(".windowPopup").click(function(e){
+            e.preventDefault();
+            //window.open("파일명", "파일이름", "옵션설정");
+            //옵션 :left, top , width, height, status, toolbar, location, menubar, scrollbars, fullscreen
+            window.open("popup.html", "popup01", "width=800, height=590px ,left=50, top=50, scrollbars=0, toolbar=0, menubar=0");
+        })
+
 
 
         //배너
@@ -615,7 +623,7 @@
                 $("#layer").fadeOut();
             })
 
-            
+
             
         });
 
