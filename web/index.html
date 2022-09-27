@@ -411,16 +411,16 @@
                                         </li>
                                         <li><a href="#">공지사항2</a>
                                             <ul style="display: none;">
-                                                <li><a href="#">첫번째 공지사항 탭 메뉴 테스트 목록 입니다. 첫번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
-                                                <li><a href="#">두번째 공지사항 탭 메뉴 테스트 목록 입니다. 두번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
-                                                <li><a href="#">세번째 공지사항 탭 메뉴 테스트 목록 입니다. 세번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
+                                                <li><a href="#">공지사항2 첫번째 공지사항 탭 메뉴 테스트 목록 입니다. 첫번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
+                                                <li><a href="#">공지사항2 두번째 공지사항 탭 메뉴 테스트 목록 입니다. 두번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
+                                                <li><a href="#">공지사항2 세번째 공지사항 탭 메뉴 테스트 목록 입니다. 세번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
                                             </ul>                                         
                                         </li>
                                         <li><a href="#">공지사항3</a>
                                            <ul style="display: none;">
-                                                <li><a href="#">첫번째 공지사항 탭 메뉴 테스트 목록 입니다. 첫번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
-                                                <li><a href="#">두번째 공지사항 탭 메뉴 테스트 목록 입니다. 두번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
-                                                <li><a href="#">세번째 공지사항 탭 메뉴 테스트 목록 입니다. 세번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
+                                                <li><a href="#">공지사항3 첫번째 공지사항 탭 메뉴 테스트 목록 입니다. 첫번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
+                                                <li><a href="#">공지사항3 두번째 공지사항 탭 메뉴 테스트 목록 입니다. 두번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
+                                                <li><a href="#">공지사항3 세번째 공지사항 탭 메뉴 테스트 목록 입니다. 세번째 공지사항 탭 메뉴 테스트 목록 입니다.</a></li>
                                             </ul>                                     
                                         </li>
                                     </ul>                                    
@@ -523,6 +523,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script>
+
+
         //배너
         //html 마크업 셋팅 -> css 연동  -> 제이쿼리 연동 -> 제이쿼리 호출
         $(document).ready(function(){
@@ -534,6 +536,17 @@
                  autoplaySpeed:3000,
                  dots:true
             });
+
+            //탭 메뉴
+            $(".tab_menu > ul li").on("click", function(e){
+                e.preventDefault();
+                $(".tab_menu > ul li").removeClass("active");
+                $(".tab_menu > ul li ul").hide();
+               
+                $(this).addClass("active").find("ul").show();               
+            });
+
+
         });
 
 
@@ -549,8 +562,5 @@
             $(this).toggleClass("on");
         });
     </script>
-
-
-
 </body>
 </html>
