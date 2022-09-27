@@ -128,7 +128,6 @@ float : left 로 인한 영역깨짐(height:0) 방지법
 .notice h4{font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold;}
 .notice ul li{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
 .notice ul li a{font-size: 12px;}
-
 .notice a.more{position: absolute; right: 0; top: 0px; display:block;background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
 .notice a.more:hover{background-position: -167px -90px;}
 
@@ -139,7 +138,6 @@ float : left 로 인한 영역깨짐(height:0) 방지법
 .notice2 li{overflow: hidden;background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
 .notice2 li a{float: left; width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
 .notice2 li span{float: right; width: 30%;  text-align: right;}
-
 .notice2 a.more{position: absolute; right: 0; top: 0px; display:block;background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
 .notice2 a.more:hover{background-position: -167px -90px;}
 
@@ -153,9 +151,23 @@ float : left 로 인한 영역깨짐(height:0) 방지법
 .notice3 li a img{ position: absolute; left: 0px; top:0px; width: 50px; border: 1px solid #0093bd;}
 .notice3 li a strong{display: block;   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .notice3 li a span{display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
-
 .notice3 a.more{position: absolute; right: 0; top: 0px; display:block;background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
 .notice3 a.more:hover{background-position: -167px -90px;}
+
+
+
+/* 4. 게시판 */
+.notice4{position: relative; margin-top: 15px; border: 1px solid #ccc;}
+.notice4 h4{font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: bold; padding:8px 10px; font-size: 14px; font-weight: 700;  border-bottom: 1px solid #ccc;}
+.notice4 h4 em{ color: #cf3292;}
+.notice4 ul{padding: 10px;}
+.notice4 li{overflow: hidden;background: url(../img/dot.gif) no-repeat 0 8px; padding-left: 8px;}
+.notice4 li a{float: left; width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
+.notice4 li span{float: right; width: 30%;  text-align: right;}
+.notice4 a.more{position: absolute; right: 9px; top: 9px; display:block;width: 37px; height: 17px;}
+.notice4 a.more:hover{background-position: -167px -90px;}
+
+
 
 
 /* 오버효과 */
