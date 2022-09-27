@@ -79,7 +79,7 @@
 
 .lg-actual-size .lg-icon.lg-zoom-in {
   opacity: 0.5;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .lg-icon.lg-actual-size {
@@ -92,7 +92,7 @@
 
 .lg-icon.lg-zoom-out {
   opacity: 0.5;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .lg-icon.lg-zoom-out:after {
@@ -101,7 +101,7 @@
 
 .lg-zoomed .lg-icon.lg-zoom-out {
   opacity: 1;
-  pointer-events: auto;
+  /* pointer-events: auto; */
 }
 
 .lg-outer[data-lg-slide-type='video'] .lg-zoom-in,
@@ -112,5 +112,5 @@
 .lg-outer.lg-first-slide-loading .lg-actual-size,
 .lg-outer.lg-first-slide-loading .lg-zoom-out {
   opacity: 0.75;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
