@@ -305,9 +305,9 @@
                                 <div class="popup">
                                     <h4>Advertisement</h4>
                                     <ul>
-                                        <li><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
-                                        <li><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
-                                        <li class="last"><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
+                                        <li class="layerPopup"><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
+                                        <li class="layerPopup"><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
+                                        <li class="layerPopup last"><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
                                     </ul>
                                 </div>
                                 <!-- //팝업 -->
@@ -535,6 +535,16 @@
         </div>
         <!-- //wrap -->
      
+
+    <!-- 레이어 팝업 -->
+        <div id="layer">
+            <img src="img/webstandard1.jpg" alt="웹표준 사이트">
+            <a href="#" class="close">close</a>
+        </div>
+    <!-- //레이어 팝업 -->
+
+
+
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
@@ -593,7 +603,20 @@
 
             
 
+            $(".layerPopup").on("click", function(e){
+                e.preventDefault();
+                 //$("#layer").slideDown();
+                $("#layer").fadeIn();
+            })
 
+            $(".close").on("click", function(e){
+                e.preventDefault();
+                //$("#layer").slideUp();
+                $("#layer").fadeOut();
+            })
+
+            
+            
         });
 
 
